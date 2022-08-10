@@ -1,0 +1,16 @@
+﻿<Window x:Class="WangZheRongYao.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WangZheRongYao" xmlns:wpf="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="1400">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Label Name = "loginfo" Content="未获取"/>
+            <Button Name="start" DockPanel.Dock="Right" Width="150" Content="开始获取" Click="start_Click"/>
+        </StackPanel>
+        <wpf:WebView2 Name = "webView2"/>
+    </DockPanel>
+</Window>
